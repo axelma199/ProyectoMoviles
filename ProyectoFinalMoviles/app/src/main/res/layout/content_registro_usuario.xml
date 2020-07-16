@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.RegistroUsuarioActivity"
+    tools:showIn="@layout/activity_registro_usuario">
+
+
+   
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Digite los siguientes datos para registrarse" />
+
+
+
+                <EditText
+                    android:id="@+id/cedulaAddUptVuelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/codigoAddUptVuelo"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/origenAddUptVuelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/origenAddUptVuelo"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/destinoAddUptVuelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/destinoAddUptVuelo"
+                    android:inputType="textPersonName" />
+
+
+                <EditText
+                    android:id="@+id/horaSalidaAddUptVuelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/horaSalidaAddUptVuelo"
+                    android:inputType="textPersonName" />
+
+
+                <EditText
+                    android:id="@+id/horaLlegadaAddUptVuelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/horaLlegadaAddUptVuelo"
+                    android:inputType="textPersonName" />
+					
+					 <EditText
+                    android:id="@+id/numPasajerosAddUptVuelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/numPasajerosAddUptVuelo"
+                    android:inputType="number" />
+
+ 
+                  <EditText
+                    android:id="@+id/numEscalasAddUptVuelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/numEscalasAddUptVuelo"
+                    android:inputType="number" />
+					
+					 <EditText
+                    android:id="@+id/comidaAddUptVuelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/comidaAddUptVuelo"
+                    android:inputType="number" />
+					
+					 <EditText
+                    android:id="@+id/duracionAddUptVuelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/duracionAddUptVuelo"
+                    android:inputType="number" /> 
+
+               <EditText
+                    android:id="@+id/avionAddUptVuelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/avionAddUptVuelo"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/estadoCivilVu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/avionAddUptVuelo"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/btnAddVuelo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:text="@string/addAeropuerto"  />
+
+                <Button
+                    android:id="@+id/btnUpdVuelo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginBottom="75dp"
+
+                    android:text="@string/Modificar"  />
+
+
+                <TextView
+                    android:id="@+id/textViewBuscar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Digite los siguientes datos para buscar" />
+
+
+                <EditText
+                    android:id="@+id/codigoBuscarVuelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/codigoBuscarVuelo"
+                    android:inputType="textPersonName" />
+
+               <EditText
+                    android:id="@+id/origenBuscarVuelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/origenBuscarVuelo"
+                    android:inputType="textPersonName" />
+					
+			   <EditText
+                    android:id="@+id/destinoBuscarVuelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/destinoBuscarVuelo"
+                    android:inputType="textPersonName" />
+      
+
+
+                <Button
+                    android:id="@+id/btnBuscar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginBottom="75dp"
+                    android:text="@string/buscar"  />
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:padding="16dp"
+                    >
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cv"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            >
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/person_name"
+                                android:layout_alignParentTop="true"
+                                android:textSize="30sp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/person_age"
+                                android:layout_toRightOf="@+id/person_name"
+                                android:layout_below="@+id/person_name"
+                                android:layout_toEndOf="@+id/person_name" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textViewEliminar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Digite código de vuelo a eliminar" />
+
+
+                <EditText
+                    android:id="@+id/codigoAddUpdAvion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/codigoAddUptAvion"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/btnEliminar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginBottom="75dp"
+                    android:text="@string/eliminar"  />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/listado_de_aeropuertos"  />
+
+                <Button
+                    android:id="@+id/btnListadoVuelo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginBottom="75dp"
+                    android:text="@string/Listar"  />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rvVuelo"
+                    android:clipToPadding="false"
+                    android:paddingBottom="50dp"
+                    android:scrollbars="vertical"/>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+   
+</android.support.constraint.ConstraintLayout>

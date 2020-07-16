@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.proyectofinalmoviles">
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/Proyecto_Aerolínea"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.proyectofinalmoviles.activity.GenerarRutasActivity"
+            android:label="@string/title_activity_generar_rutas"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="com.example.proyectofinalmoviles.activity.RegistroUsuarioActivity"
+            android:label="@string/title_activity_registro_usuario" />
+        <activity
+            android:name="com.example.proyectofinalmoviles.activity.AdmEmpleadoActivity"
+            android:label="@string/title_activity_adm_empleado"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.proyectofinalmoviles.activity.AdmPasajeroActivity"
+            android:label="@string/title_activity_adm_pasajero"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.proyectofinalmoviles.activity.AdmEscalaActivity"
+            android:label="@string/title_activity_adm_escala"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.proyectofinalmoviles.activity.Check_in_Activity"
+            android:label="@string/title_activity_check_in_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.proyectofinalmoviles.activity.ShowHistorialComprasActivity"
+            android:label="@string/title_activity_show_historial_compras"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.proyectofinalmoviles.activity.HistorialComprasActivity"
+            android:label="@string/title_activity_historial_compras"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.proyectofinalmoviles.activity.ReservaTiqueteActivity"
+            android:label="@string/title_activity_reserva_vuelo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.proyectofinalmoviles.activity.CompraTiqueteActivity"
+            android:label="@string/title_activity_compra_vuelo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.proyectofinalmoviles.activity.NavDrawerActivity"
+            android:label="@string/title_activity_nav_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.proyectofinalmoviles.activity.AdmVueloActivity"
+            android:label="@string/title_activity_adm_vuelo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.proyectofinalmoviles.activity.AdmAvionActivity"
+            android:label="@string/title_activity_adm_avion"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.proyectofinalmoviles.activity.AdmAeropuertoActivity"
+            android:label="@string/title_activity_adm_aeropuerto"  />
+        <activity
+            android:name="com.example.proyectofinalmoviles.activity.LoginActivity"
+            android:label="@string/Login">
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

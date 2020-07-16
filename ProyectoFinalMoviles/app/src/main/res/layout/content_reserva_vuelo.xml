@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.ReservaTiqueteActivity"
+    tools:showIn="@layout/activity_reserva_vuelo">
+
+
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Digite los siguientes datos para realizar la reserva" />
+
+                <EditText
+                    android:id="@+id/origenReserva"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/origenReserva"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/destinoReserva"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/destinoReserva"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/horaSalidaReserva"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/horaSalidaReserva"
+                    android:inputType="textPersonName" />
+
+
+                <EditText
+                    android:id="@+id/horaLlegadaReserva"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/horaLlegadaReserva"
+                    android:inputType="textPersonName" />
+
+
+                <EditText
+                    android:id="@+id/fechaSalidaReserva"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/fechaSalidaReserva"
+                    android:inputType="textPersonName" />
+					
+					 <EditText
+                    android:id="@+id/fechaRetornoReserva"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/fechaRetornoReserva"
+                    android:inputType="number" />
+
+ 
+                  <EditText
+                    android:id="@+id/pasajerosReserva"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/pasajerosReserva"
+                    android:inputType="number" />
+					
+					 <EditText
+                    android:id="@+id/claseReserva"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/claseReserva"
+                    android:inputType="number" />
+					 
+
+               <EditText
+                    android:id="@+id/avionAddUptVuelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/avionAddUptVuelo"
+                    android:inputType="textPersonName" /> 
+					
+					
+                <Button
+                    android:id="@+id/btnAddReserva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:text="@string/addReserva"  />
+
+                 
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

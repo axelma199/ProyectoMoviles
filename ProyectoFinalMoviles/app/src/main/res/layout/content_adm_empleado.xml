@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.AdmEmpleadoActivity"
+    tools:showIn="@layout/activity_adm_empleado">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Digite los siguientes datos para insertar o modificar" />
+
+
+                <EditText
+                    android:id="@+id/nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nombre"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/primerApellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/primerApellido"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/segundoApellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/segundoApellido"
+                    android:inputType="textPersonName" />
+
+
+                <EditText
+                    android:id="@+id/cedula"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cedula"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/telefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/telefonoAddUpdProf"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/direccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/direccionAddUpdAeropuerto"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/nacionalidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nacionalidad"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/fechaNac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:hint="Fecha de nacimiento"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/correoAddUptAeropuerto"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/clave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/clave"
+                    android:inputType="textPersonName" />
+
+
+
+                <EditText
+                    android:id="@+id/estadoCivil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/estadoCivil"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/edad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/edad"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/perfilTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:hint="Perfil"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerPerfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/perfil"
+                    android:prompt="@string/country_prompt" />
+
+
+
+
+
+
+                <Button
+                    android:id="@+id/btnAddEmpleado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:text="@string/addAeropuerto"  />
+
+                <Button
+                    android:id="@+id/btnUpEmpleado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginBottom="75dp"
+
+                    android:text="@string/Modificar"  />
+
+
+                <TextView
+                    android:id="@+id/textViewBuscar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Digite los siguientes datos para buscar" />
+
+
+                <EditText
+                    android:id="@+id/cedulaBuscarEmpleado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cedulaBuscarEmpleado"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/nombreBuscarEmpleado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nombreBuscarEmpleado"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/ape1BuscarEmpleado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cedulaBuscarEmpleado"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/ape2BuscarEmpleado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nombreBuscarEmpleado"
+                    android:inputType="textPersonName" />
+
+
+
+
+                <Button
+                    android:id="@+id/btnBuscar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginBottom="75dp"
+                    android:text="@string/buscar"  />
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:padding="16dp"
+                    >
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cv"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            >
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/person_name"
+                                android:layout_alignParentTop="true"
+                                android:textSize="30sp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/person_age"
+                                android:layout_toRightOf="@+id/person_name"
+                                android:layout_below="@+id/person_name"
+                                android:layout_toEndOf="@+id/person_name" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textViewEliminar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Digite cédula  de empleado a eliminar" />
+
+
+                <EditText
+                    android:id="@+id/codigoAddUpdAvion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/codigoAddUptAvion"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/btnEliminar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginBottom="75dp"
+                    android:text="@string/eliminar"  />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/listado_de_empleados"  />
+
+                <Button
+                    android:id="@+id/btnListadoEmpleados"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginBottom="75dp"
+                    android:text="@string/Listar"  />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rvEmpleado"
+                    android:clipToPadding="false"
+                    android:paddingBottom="50dp"
+                    android:scrollbars="vertical"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

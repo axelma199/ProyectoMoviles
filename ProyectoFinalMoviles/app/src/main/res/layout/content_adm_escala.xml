@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.AdmEscalaActivity"
+    tools:showIn="@layout/activity_adm_escala">
+ 
+ 
+	 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Digite los siguientes datos para insertar o modificar" />
+
+                <EditText
+                    android:id="@+id/codigoAddUptEscala"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/codigoAddUptEscala"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/duracionAddUptEscala"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/duracionAddUptEscala"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/aeropuertoAddUptEscala"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/aeropuertoAddUptEscala"
+                    android:inputType="textPersonName" />
+
+
+                <EditText
+                    android:id="@+id/horaSalidaAddUptEscala"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/horaSalidaAddUptEscala"
+                    android:inputType="textPersonName" />
+
+
+                <EditText
+                    android:id="@+id/horaLlegadaAddUptEscala"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/horaLlegadaAddUptEscala"
+                    android:inputType="textPersonName" />
+					 
+                <Button
+                    android:id="@+id/btnAddEscala"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:text="@string/addAeropuerto"  />
+
+                <Button
+                    android:id="@+id/btnUpdEscala"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginBottom="75dp"
+
+                    android:text="@string/Modificar"  />
+
+
+                <TextView
+                    android:id="@+id/textViewBuscar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Digite los siguientes datos para buscar" />
+
+
+                <EditText
+                    android:id="@+id/codigoBuscarEscala"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/codigoBuscarEscala"
+                    android:inputType="textPersonName" />
+
+           
+
+
+                <Button
+                    android:id="@+id/btnBuscar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginBottom="75dp"
+                    android:text="@string/buscar"  />
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:padding="16dp"
+                    >
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cv"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            >
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/person_name"
+                                android:layout_alignParentTop="true"
+                                android:textSize="30sp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/person_age"
+                                android:layout_toRightOf="@+id/person_name"
+                                android:layout_below="@+id/person_name"
+                                android:layout_toEndOf="@+id/person_name" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textViewEliminar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Digite código de vuelo a eliminar" />
+
+
+                <EditText
+                    android:id="@+id/codigoAddUpdAvion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/codigoAddUptAvion"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/btnEliminar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginBottom="75dp"
+                    android:text="@string/eliminar"  />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/listado_de_escalas"  />
+
+                <Button
+                    android:id="@+id/btnListadoEscala"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginBottom="75dp"
+                    android:text="@string/Listar"  />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rvEscala"
+                    android:clipToPadding="false"
+                    android:paddingBottom="50dp"
+                    android:scrollbars="vertical"/>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+ 
+</android.support.constraint.ConstraintLayout>

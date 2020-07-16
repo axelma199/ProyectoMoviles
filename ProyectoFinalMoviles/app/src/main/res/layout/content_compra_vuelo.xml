@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.CompraTiqueteActivity"
+    tools:showIn="@layout/activity_compra_vuelo">
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Digite los siguientes datos para realizar la compra respectiva" />
+
+                <EditText
+                    android:id="@+id/codigoReserva"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/codigoReserva"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/cedulaCompra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/cedulaCompra"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/numeroTarjetaCompra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/numeroTarjetaCompra"
+                    android:inputType="number" />
+
+
+                <EditText
+                    android:id="@+id/cvsTarjeta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/cvsTarjeta"
+                    android:inputType="number" />
+
+
+                <EditText
+                    android:id="@+id/empresaTarjeta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/empresaTarjeta"
+                    android:inputType="textPersonName" />
+					
+					 <EditText
+                    android:id="@+id/titularTarjeta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/titularTarjeta"
+                    android:inputType="textPersonName" />
+
+ 
+               
+                <Button
+                    android:id="@+id/btnAddCompra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:text="@string/addReserva"  />
+
+                 
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
